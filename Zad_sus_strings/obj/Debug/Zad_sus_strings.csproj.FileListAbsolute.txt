@@ -1,0 +1,7 @@
+D:\Djeni 9a\hw_13.05\Zad_sus_strings\bin\Debug\Zad_sus_strings.exe.config
+D:\Djeni 9a\hw_13.05\Zad_sus_strings\bin\Debug\Zad_sus_strings.exe
+D:\Djeni 9a\hw_13.05\Zad_sus_strings\bin\Debug\Zad_sus_strings.pdb
+D:\Djeni 9a\hw_13.05\Zad_sus_strings\obj\Debug\Zad_sus_strings.csproj.AssemblyReference.cache
+D:\Djeni 9a\hw_13.05\Zad_sus_strings\obj\Debug\Zad_sus_strings.csproj.CoreCompileInputs.cache
+D:\Djeni 9a\hw_13.05\Zad_sus_strings\obj\Debug\Zad_sus_strings.exe
+D:\Djeni 9a\hw_13.05\Zad_sus_strings\obj\Debug\Zad_sus_strings.pdb
