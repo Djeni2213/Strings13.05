@@ -13,7 +13,7 @@ namespace Zad_sus_strings
             Console.WriteLine("Enter a sentince:");
             string[] sentince = Console.ReadLine().Split(' ');
 
-            Console.WriteLine($"The words in the sentince are: {sentince.Count()}");
+            Console.WriteLine($"The words in the sentince are: {sentince.Length}");
             Console.WriteLine("---------------------------------------");
 
             string lastWord = sentince[sentince.Length - 1];
@@ -46,8 +46,9 @@ namespace Zad_sus_strings
             {
                 Console.WriteLine("НЯМА СЪВПАДЕНИЕ!!!");
             }
+            Console.WriteLine(sentince);
             Console.WriteLine("---------------------------------------");
-            Console.WriteLine($"broi na napraweni zameni -> {count}");
+            Console.WriteLine($"broi na napraveni zameni -> {count}");
             Console.WriteLine("---------------------------------------");
 
 
@@ -62,28 +63,32 @@ namespace Zad_sus_strings
             Console.WriteLine($"The longest word is {longest} with length -> {longest.Length}");
             Console.WriteLine("---------------------------------------");
 
+            List<string> copy = sentince.ToList();
+            copy.RemoveAt(1);
+            copy.RemoveAt(copy.Count - 1);
+            Console.WriteLine(string.Join(" ", copy));
+            Console.WriteLine("---------------------------------------");
 
 
-
-            int palCount = 0;
-            for (int i = 0; i < sentince.Length; i++)
-            {
-                string word = sentince[i];
-                string palindrom = "";
-                for (int k = sentince.Length - 1; 0 <= i; i--)
-                {
-                    palindrom = palindrom + word[k];
-                    if (palindrom == word)
-                    {
-                       palCount++;
-                        Console.WriteLine(palindrom);
-                    }
-                }
-                if ( palCount == 0 )
-                {
-                    Console.WriteLine("НЯМА ПАЛИНДРОМИ");
-                }
-            }
+            //int palCount = 0;
+            //for (int i = 0; i < sentince.Length; i++)
+            //{
+            //    string word = sentince[i];
+            //    string palindrom = "";
+            //    for (int k = sentince.Length - 1; 0 <= i; i--)
+            //    {
+            //        palindrom = palindrom + word[k];
+            //        if (palindrom == word)
+            //        {
+            //           palCount++;
+            //            Console.WriteLine(palindrom);
+            //        }
+            //    }
+            //    if ( palCount == 0 )
+            //    {
+            //        Console.WriteLine("НЯМА ПАЛИНДРОМИ");
+            //    }
+            //}
         }
     }
 }
